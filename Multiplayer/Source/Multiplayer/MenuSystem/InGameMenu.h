@@ -25,11 +25,16 @@ protected:
 
 private:
 	UPROPERTY(meta = (BindWidget))
-	class UButton* InGameMenuCancelButton;
+	class UButton* CancelButton;
 
 	UPROPERTY(meta = (BindWidget))
-	class UButton* InGameMenuQuitButton;
+	class UButton* QuitButton;
 
 	IMenuInterface* MenuInterface;
 	
+	UFUNCTION()
+	void CancelPressed();
+
+	UFUNCTION()
+	void QuitPressed();
 };

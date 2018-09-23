@@ -26,10 +26,6 @@ bool UMainMenu::Initialize()
 	return true;
 }
 
-
-
-
-
 void UMainMenu::HostServer()
 {
 	if (MenuInterface != nullptr)
